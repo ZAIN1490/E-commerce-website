@@ -75,111 +75,60 @@ nav ul li a:hover{
     margin-left: 90px;
     overflow: hidden;
 
-}/* --- Base Styles (This will apply to Desktops and Laptops) --- */
+}
+/* --- Base Styles (Desktop & Laptop Grid) --- */
 .card {
-    max-width: 93vw; /*[span_1](start_span)[span_1](end_span) */
-    margin: auto; /*[span_2](start_span)[span_2](end_span) */
-    display: flex; /*[span_3](start_span)[span_3](end_span) */
-    flex-wrap: wrap; /*[span_4](start_span)[span_4](end_span) */
-    justify-content: flex-start; /* Aligns items to the left nicely */
-    gap: 20px; /*[span_5](start_span)[span_5](end_span) */
+    max-width: 93vw; /*[span_5](start_span)[span_5](end_span) */
+    margin: 30px auto; 
+    display: flex; /*[span_6](start_span)[span_6](end_span) */
+    flex-wrap: wrap; /*[span_7](start_span)[span_7](end_span) */
+    justify-content: flex-start; 
+    gap: 20px; /*[span_8](start_span)[span_8](end_span) */
 }
 
 .card h2 {
-    width: 100%; /*[span_6](start_span)[span_6](end_span) */
-    font-size: xx-large; /*[span_7](start_span)[span_7](end_span) */
-    margin: 15px 0; /*[span_8](start_span)[span_8](end_span) */
+    width: 100%; /*[span_9](start_span)[span_9](end_span) */
+    font-size: xx-large; /*[span_10](start_span)[span_10](end_span) */
+    margin: 15px 0; /*[span_11](start_span)[span_11](end_span) */
+    text-align: left;
 }
 
 .card-items {
     display: flex;
-    flex-direction: column; /*[span_9](start_span)[span_9](end_span) */
+    flex-direction: column; /*[span_12](start_span)[span_12](end_span) */
     align-items: center;
     text-align: center;
-    /* Calculates width for 4 columns on desktop factoring in the 20px gaps */
+    /* Calculates exact width for 4 items per row on laptop screens */
     width: calc((100% - (20px * 3)) / 4); 
     box-sizing: border-box;
+    padding: 10px;
 }
 
 .card-items img {
-    height: 160px; /*[span_10](start_span)[span_10](end_span) */
-    width: 160px; /*[span_11](start_span)[span_11](end_span) */
-    object-fit: contain; /* Keeps image proportions clean */
+    height: 160px; /*[span_13](start_span)[span_13](end_span) */
+    width: 160px; /*[span_14](start_span)[span_14](end_span) */
+    object-fit: contain; /*[span_15](start_span)[span_15](end_span) */
 }
 
-/* --- Mobile View Media Query (Applies to screens smaller than 768px) --- */
-@media (max-width: 768px) {
-    .card {
-        justify-content: center; /* Centers the 2 products on mobile */
-        gap: 15px; /* Slightly smaller gap for mobile screens */
-    }
-
-    .card-items {
-        /* Calculates width for exactly 2 columns on mobile factoring in the 15px gap */
-        width: calc((100% - 15px) / 2); 
-    }
-    
-    .card-items img {
-        /* Makes images responsive on mobile so they don't overflow smaller screens */
-        max-width: 100%; 
-        height: auto; 
-    }
+.lines p {
+    margin: 5px; /*[span_16](start_span)[span_16](end_span) */
 }
 
-.card h2{
-    width: 100%;
-    font-size: xx-large;
-    margin: 15px 0;
+.discount {
+    color: rgb(44, 184, 63); /*[span_17](start_span)[span_17](end_span) */
 }
 
-.lines p{
-    margin-left: 17px;
-    margin: 5px;
-}
-.discount{
-    color: rgb(44, 184, 63);
-  }
-  
-  .card-items img{
-    height: 160px;
-    width: 160px;
-    margin: 0 12px;
-  }
-footer{
-    height: 12vh;
-    background-color:var(--main-bg-color);
-    color: aliceblue;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-family: 'Lato',sans-serif;
-    border-radius: 10px;
-    
+footer {
+    height: 12vh; /*[span_18](start_span)[span_18](end_span) */
+    background-color: var(--main-bg-color); /*[span_19](start_span)[span_19](end_span) */
+    color: aliceblue; /*[span_20](start_span)[span_20](end_span) */
+    justify-content: center; /*[span_21](start_span)[span_21](end_span) */
+    align-items: center; /*[span_22](start_span)[span_22](end_span) */
+    display: flex; /*[span_23](start_span)[span_23](end_span) */
+    font-family: 'Lato', sans-serif; /*[span_24](start_span)[span_24](end_span) */
+    border-radius: 10px; /*[span_25](start_span)[span_25](end_span) */
 }
 
-.container{
-    min-height: calc(100vh - 12vh - 60px);
-}
-.card p{
-    font-size:18px;
-    line-height:30px;
-    margin-top:15px;
-}
-.card p{
-    line-height:28px;
-    margin:12px 0;
-}
-
-.card h3{
-    color:#2874f0;
-    margin-top:20px;
-}
-
-.card ul{
-    margin:15px 30px;
-}
-
-.card ul li{
-    margin:8px 0;
-    font-size:17px;
+.container {
+    min-height: calc(100vh - 12vh - 60px); /*[span_26](start_span)[span_26](end_span) */
 }
