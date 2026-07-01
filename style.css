@@ -79,8 +79,14 @@ nav ul li a:hover{
 .card{
     max-width: 93vw;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
+
 .card h2{
+    width: 100%;
     font-size: xx-large;
     margin: 15px 0;
 }
