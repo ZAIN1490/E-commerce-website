@@ -1,54 +1,53 @@
 @media screen and (max-width: 1000px) {
-
-    nav{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
+    nav {
+        display: flex; /*[span_28](start_span)[span_28](end_span) */
+        flex-direction: column; /*[span_29](start_span)[span_29](end_span) */
+        align-items: center; /*[span_30](start_span)[span_30](end_span) */
     }
 
-    nav ul{
-        justify-content:center;
-        flex-wrap:wrap;
+    nav ul {
+        justify-content: center; /*[span_31](start_span)[span_31](end_span) */
+        flex-wrap: wrap; /*[span_32](start_span)[span_32](end_span) */
     }
 
-    .search{
-        margin:10px 0;
-        width:100%;
-        justify-content:center;
+    .search {
+        margin: 10px 0; /*[span_33](start_span)[span_33](end_span) */
+        width: 100%; /*[span_34](start_span)[span_34](end_span) */
+        justify-content: center; /*[span_35](start_span)[span_35](end_span) */
     }
 
-    .search input{
-        width:80%;
-        margin-left:0;
+    .search input {
+        width: 80%; /*[span_36](start_span)[span_36](end_span) */
+        margin-left: 0; /*[span_37](start_span)[span_37](end_span) */
     }
 
-    .slider img{
-        width:95%;
-        height:auto;
-        margin:10px auto;
-        display:block;
-    }
-
-    .card{
-        text-align:center;
-    }
-
-    .card-items{
-        display:block;
-        margin:20px auto;
-    }
-
-    .card-items img{
-        width:140px;
-        height:140px;
+    .slider img {
+        width: 95%; /*[span_38](start_span)[span_38](end_span) */
+        height: auto; /*[span_39](start_span)[span_39](end_span) */
+        margin: 10px auto; /*[span_40](start_span)[span_40](end_span) */
+        display: block; /*[span_41](start_span)[span_41](end_span) */
     }
 }
-.card-items{
-    width: 45%;
-    text-align: center;
-}
 
-.card-items img{
-    width: 120px;
-    height: 120px;
+/* --- Mobile View Layout Grid (Screens under 768px) --- */
+@media screen and (max-width: 768px) {
+    .card {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .card-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Forces exactly 2 products per row on mobile */
+        width: calc((100% - 15px) / 2); 
+        box-sizing: border-box;
+    }
+
+    .card-items img {
+        width: 130px;
+        height: 130px;
+        object-fit: contain;
+    }
 }
