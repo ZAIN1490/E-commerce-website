@@ -119,3 +119,8 @@ footer{
 .container{
     min-height: calc(100vh - 12vh - 60px);
 }
+.card p{
+    font-size:18px;
+    line-height:30px;
+    margin-top:15px;
+}
