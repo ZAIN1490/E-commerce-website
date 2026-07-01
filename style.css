@@ -75,14 +75,55 @@ nav ul li a:hover{
     margin-left: 90px;
     overflow: hidden;
 
+}/* --- Base Styles (This will apply to Desktops and Laptops) --- */
+.card {
+    max-width: 93vw; /*[span_1](start_span)[span_1](end_span) */
+    margin: auto; /*[span_2](start_span)[span_2](end_span) */
+    display: flex; /*[span_3](start_span)[span_3](end_span) */
+    flex-wrap: wrap; /*[span_4](start_span)[span_4](end_span) */
+    justify-content: flex-start; /* Aligns items to the left nicely */
+    gap: 20px; /*[span_5](start_span)[span_5](end_span) */
 }
-.card{
-    max-width: 93vw;
-    margin: auto;
+
+.card h2 {
+    width: 100%; /*[span_6](start_span)[span_6](end_span) */
+    font-size: xx-large; /*[span_7](start_span)[span_7](end_span) */
+    margin: 15px 0; /*[span_8](start_span)[span_8](end_span) */
+}
+
+.card-items {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column; /*[span_9](start_span)[span_9](end_span) */
+    align-items: center;
+    text-align: center;
+    /* Calculates width for 4 columns on desktop factoring in the 20px gaps */
+    width: calc((100% - (20px * 3)) / 4); 
+    box-sizing: border-box;
+}
+
+.card-items img {
+    height: 160px; /*[span_10](start_span)[span_10](end_span) */
+    width: 160px; /*[span_11](start_span)[span_11](end_span) */
+    object-fit: contain; /* Keeps image proportions clean */
+}
+
+/* --- Mobile View Media Query (Applies to screens smaller than 768px) --- */
+@media (max-width: 768px) {
+    .card {
+        justify-content: center; /* Centers the 2 products on mobile */
+        gap: 15px; /* Slightly smaller gap for mobile screens */
+    }
+
+    .card-items {
+        /* Calculates width for exactly 2 columns on mobile factoring in the 15px gap */
+        width: calc((100% - 15px) / 2); 
+    }
+    
+    .card-items img {
+        /* Makes images responsive on mobile so they don't overflow smaller screens */
+        max-width: 100%; 
+        height: auto; 
+    }
 }
 
 .card h2{
@@ -98,13 +139,7 @@ nav ul li a:hover{
 .discount{
     color: rgb(44, 184, 63);
   }
-  .card-items{
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: column;
-    height: fit-content;
-
-  }
+  
   .card-items img{
     height: 160px;
     width: 160px;
