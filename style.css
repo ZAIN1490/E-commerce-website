@@ -130,3 +130,21 @@ footer{
     line-height:30px;
     margin-top:15px;
 }
+.card p{
+    line-height:28px;
+    margin:12px 0;
+}
+
+.card h3{
+    color:#2874f0;
+    margin-top:20px;
+}
+
+.card ul{
+    margin:15px 30px;
+}
+
+.card ul li{
+    margin:8px 0;
+    font-size:17px;
+}
