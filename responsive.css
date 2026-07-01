@@ -1,15 +1,45 @@
-@media screen and (max-width:1000px) {
- 
-    nav{
-        display: flex;
-        flex-direction: column;
-    }
-    nav ul{
-        justify-content: center;
+@media screen and (max-width: 1000px) {
 
+    nav{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
     }
+
+    nav ul{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
     .search{
-        justify-content: center;
+        margin:10px 0;
+        width:100%;
+        justify-content:center;
     }
-    
+
+    .search input{
+        width:80%;
+        margin-left:0;
+    }
+
+    .slider img{
+        width:95%;
+        height:auto;
+        margin:10px auto;
+        display:block;
+    }
+
+    .card{
+        text-align:center;
+    }
+
+    .card-items{
+        display:block;
+        margin:20px auto;
+    }
+
+    .card-items img{
+        width:140px;
+        height:140px;
+    }
 }
