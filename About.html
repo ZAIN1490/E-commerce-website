@@ -3,95 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | BachatStore.com</title>
-
+    <title>Our Story | BachatStore</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
-
 <body>
 
-<header>
-    <nav>
-
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Contact.html">Contact Us</a></li>
-        </ul>
-
-        <div class="search">
-            <input type="text" placeholder="Search Here For Products Of Different Brands">
-            <button class="btn">Search</button>
-        </div>
-
-    </nav>
-</header>
-
-<main>
-    <div class="container">
-
-        <div class="card">
-
-            <h2>About BachatStore</h2>
-
-            <p>
-                Welcome to <b>BachatStore</b>, your trusted online shopping destination.
-                We are committed to providing high-quality products at affordable prices,
-                making online shopping simple, secure, and enjoyable for everyone.
-            </p>
-
-            <br>
-
-            <h3>Our Mission</h3>
-
-            <p>
-                Our mission is to deliver quality products while maintaining
-                excellent customer service and ensuring every customer enjoys
-                a smooth shopping experience.
-            </p>
-
-            <br>
-
-            <h3>What We Offer</h3>
-
-            <ul>
-                <li>✔ Premium Shoes</li>
-                <li>✔ Stylish Watches</li>
-                <li>✔ Affordable Prices</li>
-                <li>✔ Quality Products</li>
-                <li>✔ Customer Satisfaction</li>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">BACHAT<span>STORE</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html" class="active">About</a></li>
+                <li><a href="mailto:zain398077@gmail.com">Contact</a></li>
             </ul>
+            <div class="search-box">
+                <input type="text" placeholder="Search brands, products...">
+                <button class="search-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-            <br>
+    <main class="container">
+        <!-- Editorial Minimal Hero Header -->
+        <section class="editorial-hero">
+            <span class="editorial-tag">EST. 2022</span>
+            <h1>ARCHIVAL DESIGN.<br>ACCESSIBLE LUXURY.</h1>
+            <p class="editorial-lead">BachatStore is a digital curation space engineered to deliver high-tier essentials without traditional retail markups.</p>
+        </section>
 
-            <h3>Why Choose BachatStore?</h3>
+        <!-- Asymmetrical Split Showcase Section -->
+        <section class="editorial-split">
+            <div class="split-image-panel">
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Curation and Detail Layout">
+            </div>
+            <div class="split-text-panel">
+                <span class="panel-meta">01 / PHILOSOPHY</span>
+                <h2>The Curation Manifest</h2>
+                <p>
+                    We believe that premium craftsmanship shouldn't be defined by an inflated price tag. We cut out middle-tier distributors to source minimalist footwear and precise timepieces directly from advanced manufacturing floors.
+                </p>
+                <p>
+                    Every item in our collection undergoes rigorous aesthetic and structural reviews. If a silhouette doesn’t meet our strict standards for clean lines, material durability, and daily performance, it doesn't make it to our storefront.
+                </p>
+            </div>
+        </section>
 
-            <p>
-                We believe every customer deserves value for money.
-                That's why we carefully select products that combine
-                quality, style, and affordability. Our goal is to make
-                your shopping experience easy and reliable.
-            </p>
+        <!-- Premium 3-Column Core Values Section -->
+        <section class="values-section">
+            <div class="section-header">
+                <div>
+                    <h2>The Pillars</h2>
+                    <p class="section-subtitle">The standards that guide our digital catalog architecture.</p>
+                </div>
+                <span class="line-decorator"></span>
+            </div>
 
-            <br>
+            <div class="values-grid">
+                <div class="value-card">
+                    <span class="value-num">01</span>
+                    <h3>Premium Curation</h3>
+                    <p>Hand-selected items from international lifestyle labels, emphasizing architectural symmetry and premium raw materials.</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-num">02</span>
+                    <h3>Transparent Pricing</h3>
+                    <p>We champion direct-to-consumer pipelines, eliminating unnecessary retail premium inflation to pass savings directly to you.</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-num">03</span>
+                    <h3>Absolute Frictionless UX</h3>
+                    <p>A web experience stripped of intrusive scripts, clutter, and banners—focusing entirely on smooth typography and rapid load speeds.</p>
+                </div>
+            </div>
+        </section>
 
-            <h3>Thank You</h3>
+        <!-- Minimal Final Statement Banner -->
+        <section class="closing-statement">
+            <div class="closing-inner">
+                <h2>Thank You For Being Part Of The Journey.</h2>
+                <p>We appreciate your continuous support and remain dedicated to bringing you an uncompromising standard of modern design.</p>
+                <a href="index.html" class="editorial-btn">Explore The Collection</a>
+            </div>
+        </section>
+    </main>
 
-            <p>
-                Thank you for visiting BachatStore. We truly appreciate
-                your support and hope to serve you with the best shopping
-                experience possible.
-            </p>
-
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 BachatStore. Crafted with absolute simplicity.</p>
         </div>
-
-    </div>
-</main>
-
-<footer class="flex-all-center">
-    <p>Copyright &copy; MyCart.com</p>
-</footer>
+    </footer>
 
 </body>
 </html>
